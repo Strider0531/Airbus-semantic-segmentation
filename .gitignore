@@ -1,0 +1,10 @@
+.idea
+.ipynb_checkpoints
+__pycache__
+venv
+best_models
+**/data/right_train_test_frames/
+**/data/test_v2/
+**/data/train_v2/
+1.ipynb
+main.py
