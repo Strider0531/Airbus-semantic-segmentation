@@ -33,14 +33,14 @@ to the main project folder;
 
 Results:
 U-Net model trained on current dataset can segment 'simple' images well:
-![alt text](https://github.com/Strider0531/Airbus-semantic-segmentation/Readme_Files/good_1.png?raw=true)
+![alt text](https://github.com/Strider0531/Airbus-semantic-segmentation/Readme_Files/good_1.jpg?raw=true)
 
-![alt text](https://github.com/Strider0531/Airbus-semantic-segmentation/Readme_Files/good_2.png?raw=true)
+![alt text](https://github.com/Strider0531/Airbus-semantic-segmentation/Readme_Files/good_2.jpg?raw=true)
 
 But it's not good for segment ships from image with non-trivial background:
-![alt text](https://github.com/Strider0531/Airbus-semantic-segmentation/Readme_Files/bad_1.png?raw=true)
+![alt text](https://github.com/Strider0531/Airbus-semantic-segmentation/Readme_Files/bad_1.jpg?raw=true)
 
-![alt text](https://github.com/Strider0531/Airbus-semantic-segmentation/Readme_Files/bad_2.png?raw=true)
+![alt text](https://github.com/Strider0531/Airbus-semantic-segmentation/Readme_Files/bad_2.jpg?raw=true)
 
 For better segmentation it should be added more confident ships masks into train dataset, images with highest resolution and so on.
 Also, training process of resulted U-Net model excledes images wthout ships. Adding ones can highly increase performance.
