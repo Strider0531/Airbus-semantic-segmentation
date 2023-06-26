@@ -14,7 +14,7 @@ Using of 'Airbus ship segmentation' project:
 1. Install requirements;
 2. Open make_prediction.py and run it;
 3. Chose .jpg image with ship (image must have 768x768 resolution);
-4. Resulted image with original image and predicted mask writes to prediction/output folder. 
+4. Script creates prediction folder if it's not exist. Resulted image with original image and predicted mask writes to prediction/output folder. 
 
 - U-Net model training:
 

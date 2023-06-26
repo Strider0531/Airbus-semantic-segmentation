@@ -17,13 +17,15 @@ if picture is None:
     print("Open canceled")
     exit()
 else:
-    folder_dir = 'prediction/input'
+    folder_dir_inp = 'prediction/input'
+    folder_dir_outp = 'prediction/output'
     pic_name = 'example.jpg'  # change to desc_to_img_name() later
-    path = os.path.join(folder_dir, f'{pic_name}')
+    path = os.path.join(folder_dir_inp, f'{pic_name}')
 
     # Making the folder if it does not exist yet
-    if not os.path.exists(folder_dir):
-        os.makedirs(folder_dir)
+    if not os.path.exists(folder_dir_inp):
+        os.makedirs(folder_dir_inp)
+        os.makedirs(folder_dir_outp)
 
 # Copy file to folder
 shutil.copy(picture.name, path)
