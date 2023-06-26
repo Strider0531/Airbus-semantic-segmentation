@@ -20,7 +20,7 @@ Using of 'Airbus ship segmentation' project:
 
 1. Install requirements;
 2. Prepare train and validation pandas dataframes with 'ImageId' and 'EncodedPixels' columns 
-(Preparing_train_test_frames.ipynb notebook contains this step);
+(Preparing_train_test_frames.ipynb notebook contains this step) and define folder with train and validation image sets;
 3. Change configs.py if it's needed
 (Batch size, maximum train epochs, data folders etc.);  
 4. Model's weights, resulted "fullres_model.h5" model and training graph (training_hist_plot.png) will be saved
