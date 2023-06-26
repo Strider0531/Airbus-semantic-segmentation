@@ -25,6 +25,7 @@ Using of 'Airbus ship segmentation' project:
 (Batch size, maximum train epochs, data folders etc.);  
 4. Model's weights, resulted "fullres_model.h5" model and training graph (training_hist_plot.png) will be saved
 to the main project folder;
+For faster learning process should be used GPU device and CUDA package that satisfied tensorflow 2.10.0.
 
 - Other files:
 
@@ -33,7 +34,8 @@ to the main project folder;
 
 
 
-Results:
+Results
+================================================================
 U-Net model trained on current dataset can segment 'simple' images well:
 ![alt text](https://github.com/Strider0531/Airbus-semantic-segmentation/blob/master/Readme_Files/good_1.jpg?raw=true)
 
