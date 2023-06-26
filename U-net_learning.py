@@ -134,7 +134,7 @@ reduceLROnPlat = ReduceLROnPlateau(monitor='val_loss', factor=0.33,
                                    min_delta=0.0001, cooldown=0, min_lr=1e-8)
 
 early = EarlyStopping(monitor="val_loss", mode="min", verbose=2,
-                      patience=PATIENCE) # probably needs to be more patient, but kaggle time is limited
+                      patience=PATIENCE)
 
 callbacks_list = [checkpoint, early, reduceLROnPlat]
 
@@ -142,7 +142,6 @@ callbacks_list = [checkpoint, early, reduceLROnPlat]
 # Define intersection over union loss
 def LIoU(y_true, y_pred, eps = 1e-6):
     #if K.max(y_true) == 0.0:
-        #return LIoU(1-y_true, 1-y_pred) ## empty image; calc IoU of zeros
     intersection = K.sum(tf.cast(y_true, tf.float32) * y_pred, axis=[1,2,3])
     union = K.sum(tf.cast(y_true, tf.float32), axis=[1,2,3]) + K.sum(y_pred, axis=[1,2,3]) - intersection
     return 1-(K.mean( (intersection+eps) / (union+eps), axis=0))
